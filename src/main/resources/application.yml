@@ -1,0 +1,24 @@
+
+app:
+  name: Vengine
+spring:
+  profiles.active: test
+  main.allow-bean-definition-overriding: true
+  main.allow-circular-references: true
+  servlet:
+    multipart:
+      max-file-size: 5MB
+
+videosdk:
+  api-key: f74a3254-699f-4a3b-bd21-3aaea9042641
+  secret-key: e9d96219b9ba54eda123810ee50c86b8e902a3f6c875166441c414c43ca1dc73
+  api-endpoint: https://api.videosdk.live
+
+
+
+server:
+  port: 5555
+  servlet:
+    context-path: /
+
+allowed.origins: '*'
